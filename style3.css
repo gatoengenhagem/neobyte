@@ -1,0 +1,137 @@
+body{
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: black;
+    font-family: Courier, monospace;
+    color: hsl(120, 100%, 50%);
+    font-size: 15px;
+    overflow-x: hidden;
+}
+  
+/* animacoes dos textos */
+
+
+  @keyframes muda {
+    0% { content: "%%$@#"; }
+    5% { content: "!**%)"; }
+    10% { content: ")!(@***"; }
+    15% { content: "##@"; }
+    20% { content: "!@&&&";}
+    25% { content: "++==%##"; } 
+    30% { content: "&&*!&#&"; }
+    35% { content: "_+!*#&"; }
+    40% { content: "###"; }
+    45% { content: "(!(#*($"; }
+    50% { content: "!(***"; } 
+    55% { content: "++)@)#)"; }
+    60% { content: "&&*@"; }
+    65% { content: "!@"; }
+    70% { content: "__)#--"; }
+    75% { content: "&!*#"; } 
+    80% { content: ")!***"; }
+    85% { content: "&#!("; }
+    90% { content: "$#!"; }
+    95% { content: "==(*#$"; }
+    100% { content: "!((**$*"; } 
+  }
+
+  @keyframes muda2 {
+    0% {content: "error";}
+    25% {content: "3rror";}
+    50% {content: "err000r";}
+    75% {content: "e3rrorr";}
+    100% {content: "err0r";}
+  }
+
+/* textos bugados */
+
+  .bug::before {
+    content: "oi";
+    animation: muda 1s infinite; 
+    position: absolute;
+      top: 0;
+      right: 0;
+      margin-top: 20px;
+      margin-right: 200px;
+      padding: 0px;
+      border: 1px dotted ;
+  }
+
+  .bug2::before {
+    content: "#0";
+    animation: muda 4s infinite; 
+    position: absolute;
+      top: 0;
+      right: 0;
+      margin-top: 412px;
+      margin-right: 600px;
+      padding: 0px;
+  }
+
+  .bug3::before {
+    content: "#1";
+    animation: muda2 0,5s infinite; 
+    position: absolute;
+      top: 0;
+      right: 0;
+      margin-top: 400px;
+      margin-right: 600px;
+      padding: 0px;
+  }
+
+  .bug4::before {
+    content: "#2";
+    animation: muda2 2s infinite; 
+    position: absolute;
+      top: 0;
+      right: 0;
+      margin-top: 400px;
+      margin-right: 600px;
+      padding: 0px;
+  }
+
+  .bug5::before {
+    content: "#3";
+    animation: muda 2s infinite; 
+    position: absolute;
+      top: 0;
+      right: 0;
+      margin-top: 530px;
+      margin-right: 800px;
+      padding: 0px;
+  }
+
+  .bug6::before {
+    content: "#3";
+    animation: muda 2s infinite; 
+    position: absolute;
+      top: 0;
+      right: 0;
+      margin-top: 522px;
+      margin-right: 795px;
+      padding: 0px;
+  }
+
+  .bug7 {
+    position: absolute;
+    margin-top: -100px;
+  }
+
+  .bug8{
+    position: absolute;
+    margin-top: -100px;
+    margin-left: -33px;
+    color: black;
+  }
+
+
+
+
+
+
+
+
+
+  .rodape {
+    background-color: red;
+  }
